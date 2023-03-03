@@ -56,7 +56,7 @@ const Contact = () => {
               resize-none mb-12'
               placeholder='Your message'
             ></textarea>
-            <button className='btn btn-lg'>Send message</button>
+            <button className='btn btn-lg'>Send Message</button>
           </motion.form>
         </div>
       </div>

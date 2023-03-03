@@ -2,7 +2,7 @@ import React from 'react';
 // images
 import Image from '../assets/me.png'
 // icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -39,7 +39,7 @@ const Banner = () => {
                 2000,
                 'Musicians',
                 2000,
-                'Composers',
+                'Pro Gamer',
                 2000,
               ]} 
               speed={50}
@@ -55,7 +55,24 @@ const Banner = () => {
               viewport={{once: false, amount: 0.7 }}
               className='mb-8 mx-w-lg mx-auto lg:mx-0'
             >
-              Hallo Gais, Apa Kabs!!!  Wis Ngopi Durung . . .
+              Hallo Gais, Apa Kabs!!!  Wis Ngopi Durung . . .<br />
+              Website Ini Dibuat Menggunakan  <br/>
+              <a 
+                href='https://reactjs.org/' 
+                target='_blank' 
+                rel='noreferrer'
+                className='text-gradient mr-1'
+              >
+                ReactJS
+              </a> & 
+              <a 
+                href='https://tailwindui.com/'
+                target='_blank' 
+                rel='noreferrer'
+                className='text-gradient ml-1'
+              >
+                Tailwind Css
+              </a>
             </motion.p>
             <motion.div 
               variants={fadeIn('up' , 0.6)} 
@@ -65,7 +82,14 @@ const Banner = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <button className='btn btn-lg'>Contact me</button>
-              <a href="#" className='text-gradient btn-link'>My Portfolio</a>
+              <a 
+                href="https://ianoktafian-portfolio-tailwind-fbcnzz7cv-ianokt0.vercel.app/" 
+                target='_blank'
+                rel='noreferrer'
+                className='text-gradient btn-link'
+              >
+                Tailwind Only Version
+              </a>
             </motion.div>
             {/* socials */}
             <motion.div 
@@ -75,14 +99,29 @@ const Banner = () => {
               viewport={{once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href="#">
-                <FaYoutube />
-              </a>
-              <a href="#">
+              <a 
+                className='hover:text-accent hover:scale-125' 
+                href="https://github.com/ianokt0"
+                target='_blank'
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a 
+                className='hover:text-accent hover:scale-125' 
+                href="https://www.instagram.com/ianokt_/"
+                target='_blank'
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a 
+                className='hover:text-accent hover:scale-125' 
+                href="https://twitter.com/IanOkt0"
+                target='_blank'
+                rel="noreferrer"
+              >
+                <FaTwitter />
               </a>
             </motion.div>
           </div>

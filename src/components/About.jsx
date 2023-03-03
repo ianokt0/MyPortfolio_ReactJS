@@ -35,7 +35,7 @@ const About = () => {
             className='flex-1'
           >
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'am a Freelance Front-end Developer with over 5 years of experience.</h3>
+            <h3 className='h3 mb-4'>I'am a Junior Developer with over 4 years of experience.</h3>
             <p className='mb-6'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Distinctio repudiandae commodi ipsa soluta perferendis omnis 
@@ -78,7 +78,7 @@ const About = () => {
             </div>
             <div className='flex gap-x-8 items-center'>
               <button className='btn btn-lg'>Contact Me</button>
-              <a href="#" className='text-gradient btn-link'>
+              <a href="/" className='text-gradient btn-link'>
                 My Portfolio
               </a>
             </div>

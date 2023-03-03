@@ -12,21 +12,25 @@ const services = [
     name: 'UI/UX Design',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum tempora magnam.',
     link: 'Learn more',
+    url: 'https://github.com/ianokt0',
   },
   {
     name: 'Development',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum tempora magnam.',
     link: 'Learn more',
+    url: 'https://github.com/ianokt0',
   },
   {
     name: 'Digital Marketing',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum tempora magnam.',
     link: 'Learn more',
+    url: 'https://github.com/ianokt0',
   },
   {
     name: 'Product Branding',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum tempora magnam.',
     link: 'Learn more',
+    url: 'https://github.com/ianokt0',
   },
 ]
 
@@ -45,7 +49,7 @@ const Services = () => {
             mix-blend-lighten mb-12 lg:mb-0'
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>I'am a Freelance Front-end Developer with over 5 years of experience.</h3>
+            <h3 className='h3 max-w-[455px] mb-16'>I'am a Junior Developer with over 4 years of experience.</h3>
             <button className='btn btn-sm'>See my work</button>
           </motion.div>
           {/* service */}
@@ -60,7 +64,7 @@ const Services = () => {
             <div>
               {services.map((service, index)=> {
                 // destructure service
-                const { name, description, link } = service;
+                const { name, description, link , url } = service;
                 return(
                   <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
                     <div className='max-w-[476px]'>
@@ -68,10 +72,22 @@ const Services = () => {
                       <p className='font-secondary leading-tight'>{description}</p>
                     </div>
                     <div className='flex flex-col flex-1 items-end'>
-                      <a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                      <a 
+                        href={url} 
+                        target='_blank'
+                        rel='noreferrer'
+                        className='btn w-9 h-9 mb-[42px] flex justify-center items-center'
+                      >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className='text-gradient text-sm'>{link}</a>
+                      <a 
+                        href={url} 
+                        target='_blank'
+                        rel='noreferrer'
+                        className='text-gradient text-sm'
+                      >
+                        {link}
+                      </a>
                     </div>
                   </div>
                 )
